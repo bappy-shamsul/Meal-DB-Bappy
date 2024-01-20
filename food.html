@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food-lib</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="text-6xl font-semibold text-success text-center progress-success textarea-lg textarea-sm textarea-md textarea-xs">Salman-Faizan Food Mart!!!</h1>
+    </header>
+
+    <div class="flex flex-row justify-items-center items-center mx-96">
+        <input id="search-field" type="text" placeholder="Type here" class="input input-bordered input-success w-full max-w-xs" />
+        <button id="btn-search" onclick="searchField()" class="btn btn-success">Search</button>
+    </div>
+
+    <main>
+
+        <div id="food-container" class="card bg-base-100 shadow-xl grid grid-cols-3">
+
+
+        </div>
+
+        <!-- modal------------------------- -->
+        <!-- // <button onclick="loadDeatails()" class="btn btn-success">See More</button> -->
+        <dialog id="my_modal_3" class="modal">
+
+        </dialog>
+
+    </main>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="lib.js"></script>
+</body>
+
+</html>
